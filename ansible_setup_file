@@ -1,0 +1,298 @@
+$ ansible localhost -m setup
+
+localhost | SUCCESS => {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+            "10.0.3.107"
+        ], 
+        "ansible_all_ipv6_addresses": [
+            "fe80::216:3eff:fe61:6169"
+        ], 
+        "ansible_apparmor": {
+            "status": "enabled"
+        }, 
+        "ansible_architecture": "x86_64", 
+        "ansible_bios_date": "01/31/2016", 
+        "ansible_bios_version": "N75 Ver. 01.04", 
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "/boot/vmlinuz-4.4.0-77-generic.efi.signed", 
+            "quiet": true, 
+            "ro": true, 
+            "root": "UUID=600a284c-298d-4b01-9a34-f44e6d0266d5", 
+            "splash": true, 
+            "vt.handoff": "7"
+        }, 
+        "ansible_date_time": {
+            "date": "2017-05-29", 
+            "day": "29", 
+            "epoch": "1496030294", 
+            "hour": "03", 
+            "iso8601": "2017-05-29T03:58:14Z", 
+            "iso8601_basic": "20170529T035814306630", 
+            "iso8601_basic_short": "20170529T035814", 
+            "iso8601_micro": "2017-05-29T03:58:14.306706Z", 
+            "minute": "58", 
+            "month": "05", 
+            "second": "14", 
+            "time": "03:58:14", 
+            "tz": "UTC", 
+            "tz_offset": "+0000", 
+            "weekday": "Monday", 
+            "weekday_number": "1", 
+            "weeknumber": "22", 
+            "year": "2017"
+        }, 
+        "ansible_default_ipv4": {
+            "address": "10.0.3.107", 
+            "alias": "eth0", 
+            "broadcast": "10.0.3.255", 
+            "gateway": "10.0.3.1", 
+            "interface": "eth0", 
+            "macaddress": "00:16:3e:61:61:69", 
+            "mtu": 1500, 
+            "netmask": "255.255.255.0", 
+            "network": "10.0.3.0", 
+            "type": "ether"
+        }, 
+        "ansible_default_ipv6": {}, 
+        "ansible_devices": {
+            "sda": {
+                "holders": [], 
+                "host": "", 
+                "model": "SanDisk SD7SN6S-", 
+                "partitions": {
+                    "sda1": {
+                        "holders": [], 
+                        "sectors": "1048576", 
+                        "sectorsize": 512, 
+                        "size": "512.00 MB", 
+                        "start": "2048", 
+                        "uuid": null
+                    }, 
+                    "sda2": {
+                        "holders": [], 
+                        "sectors": "482535424", 
+                        "sectorsize": 512, 
+                        "size": "230.09 GB", 
+                        "start": "1050624", 
+                        "uuid": null
+                    }, 
+                    "sda3": {
+                        "holders": [], 
+                        "sectors": "16531456", 
+                        "sectorsize": 512, 
+                        "size": "7.88 GB", 
+                        "start": "483586048", 
+                        "uuid": null
+                    }
+                }, 
+                "removable": "0", 
+                "rotational": "0", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "500118192", 
+                "sectorsize": "512", 
+                "size": "238.47 GB", 
+                "support_discard": "4096", 
+                "vendor": "ATA"
+            }
+        }, 
+        "ansible_distribution": "Ubuntu", 
+        "ansible_distribution_major_version": "16", 
+        "ansible_distribution_release": "xenial", 
+        "ansible_distribution_version": "16.04", 
+        "ansible_dns": {
+            "nameservers": [
+                "10.0.3.1"
+            ]
+        }, 
+        "ansible_domain": "", 
+        "ansible_effective_group_id": 1000, 
+        "ansible_effective_user_id": 1000, 
+        "ansible_env": {
+            "HOME": "/home/ubuntu", 
+            "HUSHLOGIN": "FALSE", 
+            "LANG": "en_IN", 
+            "LESSCLOSE": "/usr/bin/lesspipe %s %s", 
+            "LESSOPEN": "| /usr/bin/lesspipe %s", 
+            "LOGNAME": "ubuntu", 
+            "LS_COLORS": "", 
+            "MAIL": "/var/mail/ubuntu", 
+            "PATH": "/home/ubuntu/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games", 
+            "PWD": "/home/ubuntu", 
+            "SHELL": "/bin/bash", 
+            "SHLVL": "1", 
+            "TERM": "vt220", 
+            "USER": "ubuntu", 
+            "_": "/usr/bin/ansible"
+        }, 
+        "ansible_eth0": {
+            "active": true, 
+            "device": "eth0", 
+            "features": {}, 
+            "ipv4": {
+                "address": "10.0.3.107", 
+                "broadcast": "10.0.3.255", 
+                "netmask": "255.255.255.0", 
+                "network": "10.0.3.0"
+            }, 
+            "ipv6": [
+                {
+                    "address": "fe80::216:3eff:fe61:6169", 
+                    "prefix": "64", 
+                    "scope": "link"
+                }
+            ], 
+            "macaddress": "00:16:3e:61:61:69", 
+            "mtu": 1500, 
+            "promisc": false, 
+            "speed": 10000, 
+            "type": "ether"
+        }, 
+        "ansible_fips": false, 
+        "ansible_form_factor": "Notebook", 
+        "ansible_fqdn": "ansible", 
+        "ansible_gather_subset": [
+            "hardware", 
+            "network", 
+            "virtual"
+        ], 
+        "ansible_hostname": "ansible", 
+        "ansible_interfaces": [
+            "lo", 
+            "eth0"
+        ], 
+        "ansible_kernel": "4.4.0-77-generic", 
+        "ansible_lo": {
+            "active": true, 
+            "device": "lo", 
+            "features": {}, 
+            "ipv4": {
+                "address": "127.0.0.1", 
+                "broadcast": "host", 
+                "netmask": "255.0.0.0", 
+                "network": "127.0.0.0"
+            }, 
+            "ipv6": [
+                {
+                    "address": "::1", 
+                    "prefix": "128", 
+                    "scope": "host"
+                }
+            ], 
+            "mtu": 65536, 
+            "promisc": false, 
+            "type": "loopback"
+        }, 
+        "ansible_lsb": {
+            "codename": "xenial", 
+            "description": "Ubuntu 16.04.1 LTS", 
+            "id": "Ubuntu", 
+            "major_release": "16", 
+            "release": "16.04"
+        }, 
+        "ansible_machine": "x86_64", 
+        "ansible_machine_id": "dc4c526d3bcb4df99c94e3093b6ccfc9", 
+        "ansible_memfree_mb": 7379, 
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 7754, 
+                "used": 109
+            }, 
+            "real": {
+                "free": 7379, 
+                "total": 7863, 
+                "used": 484
+            }, 
+            "swap": {
+                "cached": 0, 
+                "free": 8071, 
+                "total": 8071, 
+                "used": 0
+            }
+        }, 
+        "ansible_memtotal_mb": 7863, 
+        "ansible_mounts": [
+            {
+                "device": "/dev/sda2", 
+                "fstype": "ext4", 
+                "mount": "/", 
+                "options": "rw,relatime,errors=remount-ro,data=ordered,bind", 
+                "size_available": 77355098112, 
+                "size_total": 243046998016, 
+                "uuid": "N/A"
+            }
+        ], 
+        "ansible_nodename": "ansible", 
+        "ansible_os_family": "Debian", 
+        "ansible_pkg_mgr": "apt", 
+        "ansible_processor": [
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz"
+        ], 
+        "ansible_processor_cores": 2, 
+        "ansible_processor_count": 1, 
+        "ansible_processor_threads_per_core": 2, 
+        "ansible_processor_vcpus": 4, 
+        "ansible_product_name": "HP EliteBook 840 G3", 
+        "ansible_product_serial": "NA", 
+        "ansible_product_uuid": "NA", 
+        "ansible_product_version": "NA", 
+        "ansible_python": {
+            "executable": "/usr/bin/python", 
+            "has_sslcontext": true, 
+            "type": "CPython", 
+            "version": {
+                "major": 2, 
+                "micro": 12, 
+                "minor": 7, 
+                "releaselevel": "final", 
+                "serial": 0
+            }, 
+            "version_info": [
+                2, 
+                7, 
+                12, 
+                "final", 
+                0
+            ]
+        }, 
+        "ansible_python_version": "2.7.12", 
+        "ansible_real_group_id": 1000, 
+        "ansible_real_user_id": 1000, 
+        "ansible_selinux": false, 
+        "ansible_service_mgr": "systemd", 
+        "ansible_ssh_host_key_dsa_public": "AAAAB3NzaC1kc3MAAACBAJI1zwvNFPpf0gSukdi91xPvhPAKPT9rt5xdo1p/cX93fN7LSdzQhtAxrgXrbH5xVtaLD2Hc3aai0ylqXjPc4qVXq/cuC5mKHv29Prm8SCRRHkII+VJgzsu67Szy3E1ee3/V9UX8cezm9OWjENLXUtiH2ncaGmWqGinfITsbR3pbAAAAFQDtWC7yn2xxuSjaPT1DqG+nsKCu5wAAAIAUY5EIMcT+jCn+0RSLm/7dllb88s9pZsBAaVLL+dP97gdK9Db+1BjvjFd93Y4bXQzImlFxyu26djENKPNstHCaniqbF35TDrNJdd8rZERL5QYFWQZ4yF9U/+xPdimQByLbdGKt6dF1MUpM6EiqFlsIX8bVPSe5ZRwZVPDUo8R6PwAAAIB3NpLzADE9d8OFv+G+NHaMvWQca5WSjFiTdUvL2FPdKtLR0k5rSztl0+Ns14L0LLW6epjoMnwxVBmyLAkrFffKHZBWP3392lEiBkPyB2C8cc5R7E9qcKJZn8kHaTWmqyCmpklvceCvlwdYMxQdXFn8lMqnWGYfpY0jaKKBkmmInQ==", 
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOVp7tX2iUZN5NOcUYEFIs9VJm7TVea8tMOjkY7b791umzucBVEsnMN6C0pCQAZ0HUYktkSTr7VC/YT3RLP2Ccc=", 
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIIXoqD2WrCUdI7D193WqKNyenIwtiHwR8ff0CZDOGpwa", 
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDsJAQsTSMAYPEG+ZSFZLC7M5c6RXq082TfYR85E3h/BR+C8wBeMoDLGW0jFTVFK9EneBZ5qVSA+WwNleukTeTYNYl/Ihahy2kjHNIFSJdsImLjW+nUaqzrLzaRz+2dkt0j6WBBukyuYxcusHXFmoxzbvZNqA1LYTMo3I5H6ELOhBFKDm2czDpLaN2M6m4/jmJWgFcRkHWruYgAQ4hFypnEOEfip/eEGIGTYYZOzSk+wIrk2EatLrZ+7+5cZ5pYdkuDjhIrnnof4zdZH7VhT8ITOA1a3FXzdydXlna5109yfjrXccScXxVZ3PZePIHoDQN1wHPgAq/ietfmRHWu/lr1", 
+        "ansible_swapfree_mb": 8071, 
+        "ansible_swaptotal_mb": 8071, 
+        "ansible_system": "Linux", 
+        "ansible_system_capabilities": [
+            ""
+        ], 
+        "ansible_system_capabilities_enforced": "True", 
+        "ansible_system_vendor": "HP", 
+        "ansible_uptime_seconds": 63748, 
+        "ansible_user_dir": "/home/ubuntu", 
+        "ansible_user_gecos": "", 
+        "ansible_user_gid": 1000, 
+        "ansible_user_id": "ubuntu", 
+        "ansible_user_shell": "/bin/bash", 
+        "ansible_user_uid": 1000, 
+        "ansible_userspace_architecture": "x86_64", 
+        "ansible_userspace_bits": "64", 
+        "ansible_virtualization_role": "guest", 
+        "ansible_virtualization_type": "lxc", 
+        "module_setup": true
+    }, 
+    "changed": false
+}
